@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader;
 import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-
+//66666666666666666666
 
 import java.io.IOException;
 
@@ -45,5 +45,6 @@ public class WordCountDriver {
         //提交
         boolean result = job.waitForCompletion(true);
         System.exit(result?0:1);
+        //66666666666666666666666
     }
 }
