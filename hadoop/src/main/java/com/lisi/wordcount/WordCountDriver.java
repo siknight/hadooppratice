@@ -13,7 +13,6 @@ import java.io.IOException;
 
 //555
 //666
-//777
 public class WordCountDriver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Job job = Job.getInstance(new Configuration());
@@ -36,6 +35,5 @@ public class WordCountDriver {
         System.exit(result?0:1);
         //555
         //666
-
     }
 }
