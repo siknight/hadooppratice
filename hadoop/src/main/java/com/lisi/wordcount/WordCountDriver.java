@@ -10,10 +10,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
-//haha
-//si
-//jiang
-//jiang
+//lizi
 @SuppressWarnings("all")
 public class WordCountDriver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
