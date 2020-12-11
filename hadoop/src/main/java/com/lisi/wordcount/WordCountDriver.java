@@ -8,12 +8,11 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-//
+
 import java.io.IOException;
 //haha
 //si
 //jiang
-//si
 //jiang
 @SuppressWarnings("all")
 public class WordCountDriver {
