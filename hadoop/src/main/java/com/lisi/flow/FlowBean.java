@@ -1,13 +1,13 @@
 package com.lisi.flow;
 
-import org.apache.hadoop.io.Writable;
+
 import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class FlowBean implements WritableComparable {
+public class FlowBean implements WritableComparable<FlowBean> {
     private String phone;  //手机号
 
     private long upFlow;  //上行流量
@@ -63,8 +63,9 @@ public class FlowBean implements WritableComparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        return Math.toIntExact((this.upFlow + this.downFlow) - (((FlowBean)o).getUpFlow() + ((FlowBean)o).getDownFlow()));
+    public int compareTo(FlowBean flowBean) {
+//        return (this.getUpFlow()+this.getDownFlow()) >(flowBean.getUpFlow()+flowBean.getDownFlow())? -1 :1;
+        return -Long.compare(Long.parseLong(this.phone),Long.parseLong(flowBean.getPhone()));
     }
 
 

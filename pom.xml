@@ -10,6 +10,9 @@
     <modules>
         <module>hadoop</module>
         <module>hdfs</module>
+        <module>zookeeper</module>
+        <module>scala</module>
+        <module>Design</module>
     </modules>
 
     <dependencies>

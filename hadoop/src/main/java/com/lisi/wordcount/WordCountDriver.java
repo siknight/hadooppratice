@@ -16,6 +16,7 @@ import java.io.IOException;
 public class WordCountDriver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Job job = Job.getInstance(new Configuration());
+
         //设置java加载路径
         job.setJarByClass(WordCountDriver.class);
         //设置mapper和reduce类

@@ -17,6 +17,9 @@ public class FlowDriver {
 
         job.setJarByClass(FlowDriver.class);
 
+//        job.setPartitionerClass(PhonePartition.class);
+//        job.setNumReduceTasks(6);
+
         job.setMapperClass(FlowMapper.class);
         job.setReducerClass(FlowReducer.class);
 
@@ -26,8 +29,8 @@ public class FlowDriver {
         job.setOutputKeyClass(FlowBean.class);
         job.setOutputValueClass(LongWritable.class);
 
-        FileInputFormat.setInputPaths(job,new Path("F:\\hadooptest\\input\\phone_data.txt"));
-        FileOutputFormat.setOutputPath(job,new Path("F:\\hadooptest\\output02"));
+        FileInputFormat.setInputPaths(job,new Path("F:\\hadooptest\\phoneinput\\phone.txt"));
+        FileOutputFormat.setOutputPath(job,new Path("F:\\hadooptest\\phoneoutput"));
 
         boolean b = job.waitForCompletion(true);
 
